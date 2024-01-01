@@ -1,4 +1,4 @@
 [build]
   publish = "src/.vuepress/dist"
   command = "pnpm build"
-  ignore = "sh ./scripts/need-build.sh"
+  ignore = "bash ./scripts/need-ignore-build.sh"

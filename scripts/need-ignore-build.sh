@@ -1,3 +1,5 @@
+#!/bin/bash
+
 message=$(git cat-file -p $COMMIT_REF) # 当前 commit message
 footer=$(echo "$message" | tail -n 1) # 最后一行
 
