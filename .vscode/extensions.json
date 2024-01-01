@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "davidanson.vscode-markdownlint",
+    "vue.volar",
+    "vue.vscode-typescript-vue-plugin",
+    "yzhang.markdown-all-in-one"
+  ]
+}

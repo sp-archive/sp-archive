@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #f54a45;
+        stroke-width: 8px;
+      }
+
+      .cls-2 {
+        font-size: 208px;
+        fill: #f54a45;
+        text-anchor: middle;
+        font-family: "Microsoft YaHei";
+      }
+    </style>
+  </defs>
+  <circle id="bg" class="cls-1" cx="250" cy="250" r="210"/>
+  <text id="text" class="cls-2" x="251.5" y="328.5"><tspan x="251.5">S</tspan></text>
+</svg>
