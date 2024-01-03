@@ -1,0 +1,18 @@
+name: 同步主仓库更新
+
+on:
+  schedule:
+    - cron: '43 21 * * *' # 一天一次就行
+  workflow_dispatch:
+
+jobs:
+  sync:
+    name: 同步更新
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    if: github.repository == 'sp-archive/sp-archive-staging'
+    steps:
+      - run: gh repo sync sp-archive/sp-archive-staging
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
