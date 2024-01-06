@@ -1,2 +1,2 @@
-markdownlint-cli2 "**/*.md" "#node_modules"
+markdownlint-cli2 "**/*.md"
 eslint .

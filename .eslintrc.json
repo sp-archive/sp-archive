@@ -23,7 +23,7 @@
   ],
   "root": true,
   "rules": {
-    "curly": [2, "multi-or-nest"],
+    "curly": [2, "consistent"],
     "eqeqeq": [2, "always"],
     "@stylistic/comma-dangle": [2, "always-multiline"],
     "@stylistic/eol-last": [2, "always"],

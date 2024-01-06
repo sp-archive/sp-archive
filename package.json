@@ -9,6 +9,8 @@
     "clean-dev": "vuepress dev src --clean-cache",
     "dev": "vuepress dev src",
     "lint": "sh scripts/lint.sh",
+    "new-archive": "node --loader ts-node/esm scripts/new-archive.ts",
+    "push-archive": "node --loader ts-node/esm scripts/push-archive.ts",
     "update-package": "pnpm dlx vp-update"
   },
   "devDependencies": {
@@ -16,19 +18,25 @@
     "@commitlint/config-conventional": "^18.4.3",
     "@commitlint/types": "^18.4.3",
     "@stylistic/eslint-plugin": "^1.5.1",
-    "@tsconfig/recommended": "^1.0.3",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "~20",
     "@typescript-eslint/eslint-plugin": "^6.16.0",
     "@typescript-eslint/parser": "^6.16.0",
     "@vuepress/client": "2.0.0-rc.0",
     "@vuepress/utils": "2.0.0-rc.0",
+    "consola": "^3.2.3",
     "eslint": "^8.56.0",
     "eslint-plugin-vue": "^9.19.2",
     "husky": "^8.0.3",
+    "inquirer": "^9.2.12",
     "markdownlint-cli2": "^0.11.0",
+    "simple-git": "^3.22.0",
+    "ts-node": "^10.9.2",
     "typescript": "^5.3.3",
     "vue": "^3.4.3",
     "vue-eslint-parser": "^9.3.2",
     "vuepress": "2.0.0-rc.0",
-    "vuepress-theme-hope": "2.0.0-rc.10"
+    "vuepress-theme-hope": "2.0.0-rc.10",
+    "yaml": "^2.3.4"
   }
 }

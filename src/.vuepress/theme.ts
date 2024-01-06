@@ -3,7 +3,7 @@ import navbar from "./navbar.js"
 import { isArchive } from "./utils/archive.js"
 
 export default hopeTheme({
-  copyright: 'GPL-3.0-or-later Licensed <br /> Copyright © 2024-present Super V 2038',
+  copyright: "GPL-3.0-or-later Licensed <br /> Copyright © 2024-present Super V 2038",
   displayFooter: true,
   docsDir: "src",
   footer: "收录内容仅供交流学习，本站不提供任何形式的明示或暗示的保证",
