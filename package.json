@@ -24,6 +24,7 @@
     "@typescript-eslint/parser": "^6.16.0",
     "@vuepress/client": "2.0.0-rc.0",
     "@vuepress/utils": "2.0.0-rc.0",
+    "autocorrect-node": "^2.9.0",
     "consola": "^3.2.3",
     "eslint": "^8.56.0",
     "eslint-plugin-vue": "^9.19.2",
