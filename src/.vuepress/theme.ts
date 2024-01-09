@@ -17,6 +17,7 @@ export default hopeTheme({
         return isArchive("/" + filePathRelative)
       },
     },
+    git: false,
   },
   repo: "sp-archive/sp-archive",
   sidebar: false,
