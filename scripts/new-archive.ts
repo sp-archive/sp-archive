@@ -1,6 +1,6 @@
 import { spawnSync } from "node:child_process"
 import { randomBytes } from "node:crypto"
-import { writeFileSync } from "node:fs"
+import { existsSync, mkdirSync, writeFileSync } from "node:fs"
 import path from "node:path"
 import autocorrect from "autocorrect-node"
 import inquirer from "inquirer"
@@ -12,7 +12,8 @@ const __dirname = getDirname(import.meta.url)
 
 const id = randomBytes(4).toString("hex").slice(0, 7) // 7 位随机十六进制
 consola.info("文章 ID：%s", id)
-const filePath = path.resolve(__dirname, `../src/archive/${id}.md`)
+const fileDir = path.resolve(__dirname, `../src/archive/${id.slice(0, 2)}`)
+const filePath = path.resolve(fileDir, `./${id.slice(2)}.md`)
 
 const filter = (content: string) => {
   content = content.trim()
@@ -39,6 +40,7 @@ ${yaml.stringify(frontmatter)}
 
 ${content}
 `) // 添加格式；中英文间加空格
+if (!existsSync(fileDir)) mkdirSync(fileDir) // 先保证目录存在
 writeFileSync(filePath, content) // 写入文件
 consola.success("文章已保存")
 
