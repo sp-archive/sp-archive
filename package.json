@@ -1,0 +1,46 @@
+{
+  "name": "sp-archive",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@8.15.4",
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://www.sp-archive.top/",
+  "repository": {
+    "url": "https://github.com/sp-archive/sp-archive"
+  },
+  "scripts": {
+    "build": "vuepress build content",
+    "clean-dev": "vuepress dev content --clean-cache",
+    "dev": "vuepress dev content",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "new-archive": "tsx scripts/new-archive.ts",
+    "push-archive": "tsx scripts/push-archive.ts",
+    "upload-repo": "tsx scripts/upload-repo.ts",
+    "update-package": "pnpm dlx vp-update"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.8.0",
+    "@commitlint/cli": "^19.0.3",
+    "@commitlint/config-conventional": "^19.0.3",
+    "@commitlint/types": "^19.0.3",
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.11.25",
+    "@vuepress/bundler-vite": "2.0.0-rc.8",
+    "autocorrect-node": "^2.9.0",
+    "consola": "^3.2.3",
+    "date-fns": "^3.3.1",
+    "eslint": "^8.57.0",
+    "husky": "^8.0.3",
+    "inquirer": "^9.2.15",
+    "netlify-cli": "^17.19.0",
+    "simple-git": "^3.22.0",
+    "tsx": "^4.7.1",
+    "typescript": "^5.4.2",
+    "vue": "^3.4.21",
+    "vuepress": "^2.0.0-rc.8",
+    "vuepress-theme-hope": "^2.0.0-rc.29",
+    "yaml": "^2.4.1"
+  }
+}

@@ -1,0 +1,9 @@
+node_modules
+
+.vscode/**
+!.vscode/extensions.json
+.netlify
+
+content/.vuepress/dist
+content/.vuepress/.temp
+content/.vuepress/.cache
