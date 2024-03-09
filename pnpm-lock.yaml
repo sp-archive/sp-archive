@@ -20,6 +20,9 @@ devDependencies:
   '@types/inquirer':
     specifier: ^9.0.7
     version: 9.0.7
+  '@types/mixpanel-browser':
+    specifier: ^2.49.0
+    version: 2.49.0
   '@types/node':
     specifier: ^20.11.25
     version: 20.11.25
@@ -44,6 +47,9 @@ devDependencies:
   inquirer:
     specifier: ^9.2.15
     version: 9.2.15
+  mixpanel-browser:
+    specifier: ^2.49.0
+    version: 2.49.0
   netlify-cli:
     specifier: ^17.19.0
     version: 17.19.0(@types/node@20.11.25)
@@ -2822,6 +2828,10 @@ packages:
 
   /@types/mdurl@1.0.5:
     resolution: {integrity: sha512-6L6VymKTzYSrEf4Nev4Xa1LCHKrlTlYCBMTlQKFuddo1CvQcE52I0mwfOJayueUC7MJuXOeHTcIU683lzd0cUA==}
+    dev: true
+
+  /@types/mixpanel-browser@2.49.0:
+    resolution: {integrity: sha512-StmgUnS58d44DmIAEX9Kk8qwisAYCl6E2qulIjYyHXUPuJCPOuyUMTTKBp+aU2F2do+kxAzCxiBtsB4fnBT9Fg==}
     dev: true
 
   /@types/ms@0.7.34:
@@ -8729,6 +8739,10 @@ packages:
     dependencies:
       for-in: 1.0.2
       is-extendable: 1.0.1
+    dev: true
+
+  /mixpanel-browser@2.49.0:
+    resolution: {integrity: sha512-RZJCO7XXuuHBAWG5fd9Mavz994M7v7W3Qiaq8NzmN631pa4BQ0vNZQtRFqKcCCOBn4xqOZbX2GkuC7ZkQoL4cQ==}
     dev: true
 
   /mkdirp-classic@0.5.3:
