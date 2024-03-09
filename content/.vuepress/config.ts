@@ -1,7 +1,7 @@
-import process from 'node:process'
 import { defineUserConfig } from 'vuepress'
 import { getDirname, path } from 'vuepress/utils'
 import vite from '@vuepress/bundler-vite'
+import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
 import theme from './theme.js'
 
 const __dirname = getDirname(import.meta.url)
@@ -22,6 +22,11 @@ export default defineUserConfig({
   }),
   description: 'Spank 文章收录',
   lang: 'zh-CN',
+  plugins: [
+    registerComponentsPlugin({
+      componentsDir: path.resolve(__dirname, './components'),
+    }),
+  ],
   shouldPrefetch(file) {
     const name = file.replace('assets/', '')
     return PREFETCHES.some(item => name.startsWith(item))

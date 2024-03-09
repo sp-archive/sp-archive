@@ -8,3 +8,5 @@ export const ARCHIVE_PAGE_VALIDATOR = /^\/article\/\d{7}\.(md|html)$/
 export function isArchive(path: string) {
   return ARCHIVE_PAGE_VALIDATOR.test(path)
 }
+
+export type WarningType = 'partial' | 'serializing'
