@@ -1,7 +1,6 @@
 ---
 icon: info
 pageInfo: []
-toc: false
 ---
 
 # 关于本站

@@ -35,4 +35,5 @@ export default hopeTheme({
   },
   repo: 'https://github.com/orgs/sp-archive/discussions',
   sidebar: false,
+  toc: false,
 }, { custom: true })
