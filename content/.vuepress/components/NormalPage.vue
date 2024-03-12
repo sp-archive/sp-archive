@@ -33,7 +33,7 @@ const warning = computed(() => {
           :link="reference"
           :unknown="!reference.length"
         />
-        <ArchiveWarning v-if="warning" :types="warning" />
+        <ArchiveWarning v-if="warning.length" :types="warning" />
       </div>
     </template>
   </HopeNormalPage>
