@@ -8,17 +8,15 @@ jobs:
     runs-on: ubuntu-latest
     env:
       NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-      NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-      SP_MIXPANEL_TOKEN: ${{ secrets.SP_MIXPANEL_TOKEN }}
+      NETLIFY_SITE_ID: ${{ vars.NETLIFY_SITE_ID }}
+      SP_MIXPANEL_TOKEN: ${{ vars.SP_MIXPANEL_TOKEN }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v2
         with:
           version: 8
       - run: pnpm install
-      - run: pnpm build
-      - run: pnpm netlify deploy --prod
+      - run: pnpm netlify deploy --build --prod-if-unlocked --message "${{ github.sha }}"

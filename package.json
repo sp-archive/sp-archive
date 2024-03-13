@@ -10,7 +10,7 @@
     "url": "https://github.com/sp-archive/sp-archive"
   },
   "scripts": {
-    "build": "vuepress build content",
+    "build": "vuepress build content --dest dist",
     "clean-dev": "vuepress dev content --clean-cache",
     "dev": "vuepress dev content",
     "lint": "eslint .",
