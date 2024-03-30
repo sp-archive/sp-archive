@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { usePageData } from 'vuepress/client'
-import { computed } from 'vue'
 import HopeAutoLink from 'vuepress-theme-hope/components/AutoLink'
 import { isArchive } from '../utils/archive'
 import Alert from './Alert.vue'
+import { computed } from 'vue'
 
 const props = withDefaults(defineProps<{
   link: string[]

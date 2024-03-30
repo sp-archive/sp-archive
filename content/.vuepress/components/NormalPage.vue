@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { computed } from 'vue'
 import HopeNormalPage from 'vuepress-theme-hope/components/NormalPage.js'
 import { usePageFrontmatter } from 'vuepress/client'
 import CategoriesData from '../categories.json'
 import ArchiveWarning from './ArchiveWarning.vue'
 import ArchiveReference from './ArchiveReference.vue'
+import { computed } from 'vue'
 
 const frontmatter = usePageFrontmatter()
 const reference = computed(() => { // reference 转为数组

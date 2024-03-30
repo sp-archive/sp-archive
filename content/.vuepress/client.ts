@@ -1,19 +1,20 @@
 import { defineClientConfig } from 'vuepress/client'
+import mixpanel from 'mixpanel-browser'
 
-async function setupMixpanel() {
-  const mixpanel = await import('mixpanel-browser')
+function setupMixpanel() {
   const token = import.meta.env.SP_MIXPANEL_TOKEN
   if (!token)
     return
   mixpanel.init(token, {
     debug: import.meta.env.DEV,
-    track_pageview: true,
+    persistence: 'localStorage',
+    track_pageview: 'url-with-path',
   })
 }
 
 export default defineClientConfig({
   async enhance() {
     if (!__VUEPRESS_SSR__)
-      setupMixpanel() // 异步初始化
+      setupMixpanel()
   },
 })
