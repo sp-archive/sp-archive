@@ -1,11 +1,12 @@
 import { defineClientConfig } from 'vuepress/client'
+import mixpanel from 'mixpanel-browser'
 
-async function setupMixpanel() {
-  const mixpanel = await import('mixpanel-browser') // 动态 import 避免被拦截
+function setupMixpanel() {
   const token = import.meta.env.SP_MIXPANEL_TOKEN
   if (!token)
     return
   mixpanel.init(token, {
+    api_host: import.meta.env.SP_MIXPANEL_API_HOST,
     debug: import.meta.env.DEV,
     persistence: 'localStorage',
     track_pageview: 'url-with-path',
@@ -13,8 +14,8 @@ async function setupMixpanel() {
 }
 
 export default defineClientConfig({
-  async enhance() {
+  enhance() {
     if (!__VUEPRESS_SSR__)
-      setupMixpanel() // 异步初始化
+      setupMixpanel()
   },
 })
