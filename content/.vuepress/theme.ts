@@ -1,6 +1,6 @@
+import { hopeTheme } from 'vuepress-theme-hope'
 import navbar from './navbar.js'
 import { isArchive } from './utils/archive.js'
-import { hopeTheme } from 'vuepress-theme-hope'
 
 export default hopeTheme({
   blog: {

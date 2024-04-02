@@ -1,7 +1,7 @@
 import { getDirname, path } from 'vuepress/utils'
+import vite from '@vuepress/bundler-vite'
 import theme from './theme.js'
 import { defineUserConfig } from 'vuepress'
-import vite from '@vuepress/bundler-vite'
 import { registerComponentsPlugin } from '@vuepress/plugin-register-components'
 
 const __dirname = getDirname(import.meta.url)

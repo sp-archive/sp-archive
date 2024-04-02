@@ -9,7 +9,6 @@ jobs:
     env:
       NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
       NETLIFY_SITE_ID: ${{ vars.NETLIFY_SITE_ID }}
-      SP_MIXPANEL_API_HOST: ${{ vars.SP_MIXPANEL_API_HOST }}
       SP_MIXPANEL_TOKEN: ${{ vars.SP_MIXPANEL_TOKEN }}
     steps:
       - uses: actions/checkout@v4
