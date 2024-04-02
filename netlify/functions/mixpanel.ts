@@ -18,13 +18,17 @@ export default async (req: Request, ctx: Context) => {
   headers.set('X-Forwarded-Host', new URL(req.url).host)
   ctx.log('new headers: %o', headers)
 
-  const response = await fetch(FORWARD_HOST + ctx.params.endpoint, {
-    ...req,
+  const url = FORWARD_HOST + ctx.params.endpoint
+  ctx.log('forward to: %s', url)
+
+  const response = await fetch(url, {
+    body: req.body,
+    method: req.method,
     headers,
   })
-  const body = await response.text()
-  console.log('mixpanel response: %o', body)
 
+  const body = await response.text()
+  ctx.log('mixpanel response: %o', body)
   return new Response(body, {
     status: response.status,
     headers: response.headers,
