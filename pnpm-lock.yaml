@@ -17,6 +17,9 @@ devDependencies:
   '@commitlint/types':
     specifier: ^19.0.3
     version: 19.0.3
+  '@netlify/functions':
+    specifier: ^2.6.0
+    version: 2.6.0
   '@types/inquirer':
     specifier: ^9.0.7
     version: 9.0.7
@@ -1897,6 +1900,13 @@ packages:
     transitivePeerDependencies:
       - encoding
       - supports-color
+    dev: true
+
+  /@netlify/functions@2.6.0:
+    resolution: {integrity: sha512-vU20tij0fb4nRGACqb+5SQvKd50JYyTyEhQetCMHdakcJFzjLDivvRR16u1G2Oy4A7xNAtGJF1uz8reeOtTVcQ==}
+    engines: {node: '>=14.0.0'}
+    dependencies:
+      '@netlify/serverless-functions-api': 1.14.0
     dev: true
 
   /@netlify/git-utils@5.1.1:
