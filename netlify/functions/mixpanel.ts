@@ -22,7 +22,10 @@ export default async (req: Request, ctx: Context) => {
     ...req,
     headers,
   })
-  return new Response(await response.json(), {
+  const body = await response.text()
+  console.log('mixpanel response: %o', body)
+
+  return new Response(body, {
     status: response.status,
     headers: response.headers,
   })
