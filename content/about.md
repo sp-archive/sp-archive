@@ -5,6 +5,12 @@ pageInfo: []
 
 # 关于本站
 
+::: danger 本站已经停止运营
+
+详见[公告](/closing-down.html)。
+
+:::
+
 本站（www.sp-archive.top）是优质 SP 文章的收录站，是非盈利的、公益性质的知识聚合平台。
 
 源代码以 GPL-3.0-or-later 协议开源，主仓库位于 [GitHub](https://github.com/sp-archive/sp-archive)。
@@ -30,9 +36,3 @@ pageInfo: []
 - 散布淫秽、色情、赌博、暴力、凶杀、恐怖或者教唆犯罪的；
 - 侮辱或者诽谤他人，侵害他人名誉、隐私和其他合法权益的；
 - 法律、行政法规禁止的其他内容。
-
-## 联系我们
-
-GitHub：[@sp-archive](https://github.com/sp-archive)
-
-邮箱：`hello@sp-archive.top`

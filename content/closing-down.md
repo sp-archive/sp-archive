@@ -23,7 +23,7 @@ author: Super V 2038
 
 文章不再修改、添加、删除，邮箱仅 `hello@sp-archive.top` 继续接收邮件一段时间。
 
-如果没有意外发生，本站将于 2024/4/14 下线所有内容，并归档 GitHub 仓库和组织。特别地，由于 GitHub 服务协议，代码仓库的 `main` 分支上已经删除了所有文章，需要切换到 [tag `final`](https://github.com/sp-archive/sp-archive/tree/final) 查看。
+本站已于 2024/4/14 下线所有内容，并归档 GitHub 仓库和组织。
 
 最后，祝 SP 圈越来越好。
 
