@@ -1,0 +1,18 @@
+.vp-notice-wrapper {
+  width: 40vw;
+}
+@media screen and (max-width: 960px) {
+  .vp-notice-wrapper {
+    width: 80vw;
+  }
+}
+.vp-notice-content p {
+  margin: 0;
+  text-indent: 2em;
+}
+
+.vp-site-name,
+.vp-blog-hero-title,
+.vp-blog-hero-description {
+  text-decoration: line-through;
+}

@@ -6,7 +6,7 @@ export const ARCHIVE_PAGE_VALIDATOR = /^\/article\/\d{7}\.(md|html)$/
  * @param path 路径（以 `/` 开头）
  */
 export function isArchive(path: string) {
-  return ARCHIVE_PAGE_VALIDATOR.test(path)
+  return ARCHIVE_PAGE_VALIDATOR.test(path) || path === '/closing-down.md'
 }
 
 export type WarningType = 'partial' | 'serializing'

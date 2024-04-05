@@ -7,7 +7,7 @@ pageInfo: []
 
 本站（www.sp-archive.top）是优质 SP 文章的收录站，是非盈利的、公益性质的知识聚合平台。
 
-源代码以 GPL-3.0-or-later 协议开源，主仓库位于 [GitHub](https://github.com/sp-archive/sp-archive)。受制于 GitHub 服务协议，仓库是私有的，但任何人都可以[联系我们](#联系我们)获取源代码。
+源代码以 GPL-3.0-or-later 协议开源，主仓库位于 [GitHub](https://github.com/sp-archive/sp-archive)。
 
 **本站不持有收录内容的著作权**，GPL-3.0-or-later 协议不适用于收录的内容，也不提供任何形式的明示或暗示的保证。
 
